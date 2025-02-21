@@ -1,0 +1,43 @@
+@page "/action"
+@using AspireDaprDemo.ServiceDefaults
+@using Dapr.Client
+@rendermode InteractiveServer
+@inject DaprClient daprClient;
+
+<PageTitle>Action</PageTitle>
+
+<h1>Action</h1>
+
+<button class="btn btn-primary" @onclick="GetWeatherForecast">Click me</button>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th aria-label="Temperature in Celsius">Temp. (C)</th>
+            <th aria-label="Temperature in Farenheit">Temp. (F)</th>
+            <th>Summary</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var forecast in forecasts)
+        {
+            <tr>
+                <td>@forecast.Date.ToShortDateString()</td>
+                <td>@forecast.TemperatureC</td>
+                <td>@forecast.TemperatureF</td>
+                <td>@forecast.Summary</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@code {
+    private int currentCount = 0;
+    private WeatherForecast[] forecasts = Array.Empty<WeatherForecast>();
+
+    private async Task GetWeatherForecast()
+    {
+        forecasts = await daprClient.InvokeMethodAsync<WeatherForecast[]>(HttpMethod.Get, "alice", "weatherforecast");
+    }
+}

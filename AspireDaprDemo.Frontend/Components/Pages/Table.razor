@@ -1,0 +1,48 @@
+@page "/table"
+@using AspireDaprDemo.ServiceDefaults
+@using Azure.Data.Tables
+@attribute [StreamRendering]
+@inject TableServiceClient tableServiceClient;
+
+
+<PageTitle>Table</PageTitle>
+
+<h1>Table</h1>
+
+<p>This component demonstrates showing data.</p>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>PartitionKey</th>
+            <th>Rowkey</th>
+            <th>Timestamp</th>
+            <th>Message</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var entity in entities)
+        {
+            <tr>
+                <td>@entity.PartitionKey</td>
+                <td>@entity.RowKey</td>
+                <td>@entity.Timestamp.Value</td>
+                <td>@entity.GetString("Message")</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@code {
+    private List<TableEntity> entities = new List<TableEntity>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        // Simulate asynchronous loading to demonstrate streaming rendering
+        await Task.Delay(500);
+
+        var tableClient = tableServiceClient.GetTableClient("Messages");
+        entities = tableClient.Query<TableEntity>().OrderByDescending(x => x.Timestamp).ToList();
+    }
+}

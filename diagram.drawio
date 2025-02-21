@@ -1,0 +1,104 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.17 Chrome/128.0.6613.36 Electron/32.0.1 Safari/537.36" version="24.7.17">
+  <diagram name="Page-1" id="vQnwWi5R71VoBJ2wnbkj">
+    <mxGraphModel dx="2037" dy="825" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="shrYG_i2Be6IJjJ4tJXh-1" value="Frontend" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="365" y="380" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="shrYG_i2Be6IJjJ4tJXh-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" parent="1" source="shrYG_i2Be6IJjJ4tJXh-2" target="shrYG_i2Be6IJjJ4tJXh-9" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="shrYG_i2Be6IJjJ4tJXh-11" value="Dapr Invoke Weather" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="shrYG_i2Be6IJjJ4tJXh-10" vertex="1" connectable="0">
+          <mxGeometry x="0.0074" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="shrYG_i2Be6IJjJ4tJXh-2" value="Alice" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="460" y="560" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="shrYG_i2Be6IJjJ4tJXh-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="shrYG_i2Be6IJjJ4tJXh-1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="520" y="560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="shrYG_i2Be6IJjJ4tJXh-4" value="Text" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="shrYG_i2Be6IJjJ4tJXh-3" vertex="1" connectable="0">
+          <mxGeometry x="0.1999" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="shrYG_i2Be6IJjJ4tJXh-6" value="Dapr Invoke Weather" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="shrYG_i2Be6IJjJ4tJXh-3" vertex="1" connectable="0">
+          <mxGeometry x="0.2166" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="shrYG_i2Be6IJjJ4tJXh-7" value="Dapr&lt;br&gt;State" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" parent="1" vertex="1">
+          <mxGeometry x="271.67" y="560" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="shrYG_i2Be6IJjJ4tJXh-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=classic;startFill=1;" parent="1" source="shrYG_i2Be6IJjJ4tJXh-2" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="330" y="590" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="370" y="590" />
+              <mxPoint x="370" y="590" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="shrYG_i2Be6IJjJ4tJXh-9" value="Bob" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="460" y="710" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="shrYG_i2Be6IJjJ4tJXh-12" value="" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/storage/Storage_Accounts.svg;" parent="1" vertex="1">
+          <mxGeometry x="80" y="560" width="50" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="shrYG_i2Be6IJjJ4tJXh-13" value="" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/integration/Service_Bus.svg;" parent="1" vertex="1">
+          <mxGeometry x="280" y="840" width="45.33" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="shrYG_i2Be6IJjJ4tJXh-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.983;entryY=0.596;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="shrYG_i2Be6IJjJ4tJXh-9" target="shrYG_i2Be6IJjJ4tJXh-13" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="520" y="864" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="shrYG_i2Be6IJjJ4tJXh-15" value="Dapr Add Message" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="shrYG_i2Be6IJjJ4tJXh-14" vertex="1" connectable="0">
+          <mxGeometry x="-0.5102" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="shrYG_i2Be6IJjJ4tJXh-16" value="Brook" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="245" y="710" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="shrYG_i2Be6IJjJ4tJXh-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="shrYG_i2Be6IJjJ4tJXh-13" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="303" y="770" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="shrYG_i2Be6IJjJ4tJXh-18" value="Dapr Receive Message" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="shrYG_i2Be6IJjJ4tJXh-17" vertex="1" connectable="0">
+          <mxGeometry x="-0.1479" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="shrYG_i2Be6IJjJ4tJXh-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.503;entryY=1.068;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="shrYG_i2Be6IJjJ4tJXh-16" target="shrYG_i2Be6IJjJ4tJXh-12" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="shrYG_i2Be6IJjJ4tJXh-20" value="Write message to table" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="shrYG_i2Be6IJjJ4tJXh-19" vertex="1" connectable="0">
+          <mxGeometry x="0.1917" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="shrYG_i2Be6IJjJ4tJXh-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.468;exitY=-0.017;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="shrYG_i2Be6IJjJ4tJXh-16" target="shrYG_i2Be6IJjJ4tJXh-7" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="shrYG_i2Be6IJjJ4tJXh-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.48;entryY=0.039;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="shrYG_i2Be6IJjJ4tJXh-1" target="shrYG_i2Be6IJjJ4tJXh-12" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="shrYG_i2Be6IJjJ4tJXh-23" value="Get Messages From Table" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="shrYG_i2Be6IJjJ4tJXh-22" vertex="1" connectable="0">
+          <mxGeometry x="-0.322" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
